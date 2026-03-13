@@ -7,7 +7,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gn-math</title>
+    <title>harmony-portal</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -275,7 +275,7 @@
 </head>
 
 <body class="dark-mode">
-    <h1>gn-math</h1>
+    <h1>harmony-portal</h1>
     <div style="width:100%; display:flex; justify-content:center; margin-bottom:10px;">
         <iframe src="https://democratmachinesucceed.com/km9dvd7fp?key=51c9dd135146d5d93f5886779fc2b354" style="width:90%; height:90px; border:none;"></iframe>
     </div>
@@ -317,9 +317,9 @@
         const searchBar = document.getElementById('searchBar');
         const sortOptions = document.getElementById('sortOptions');
         // https://www.jsdelivr.com/tools/purge
-        const zonesURL = "https://cdn.jsdelivr.net/gh/gn-math/assets@main/zones.json";
-        const coverURL = "https://cdn.jsdelivr.net/gh/gn-math/covers@main";
-        const htmlURL = "https://cdn.jsdelivr.net/gh/gn-math/html@main";
+        const zonesURL = "https://cdn.jsdelivr.net/gh/harmony-portal/assets@main/zones.json";
+        const coverURL = "https://cdn.jsdelivr.net/gh/harmony-portal/covers@main";
+        const htmlURL = "https://cdn.jsdelivr.net/gh/harmony-portal/html@main";
         let zones = [];
         let popularityData = {};
         async function listZones() {
@@ -343,7 +343,7 @@
         }
         async function fetchPopularity() {
             try {
-                const response = await fetch("https://data.jsdelivr.com/v1/stats/packages/gh/gn-math/html@main/files?period=year");
+                const response = await fetch("https://data.jsdelivr.com/v1/stats/packages/gh/harmony-portal/html@main/files?period=year");
                 const data = await response.json();
                 data.forEach(file => {
                     const idMatch = file.name.match(/\/(\d+)\.html$/);
